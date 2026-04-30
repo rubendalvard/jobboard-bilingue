@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Espace Candidats – JobBoard Bilingue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Espace candidats du JobBoard bilingue FR/EN : profil, CV, candidatures, alertes emploi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family:'Inter',sans-serif; background:#F5F7FA; margin:0; }
+    header, footer { background:#fff; border-bottom:1px solid #E5E7EB; }
+    .container { max-width:1120px; margin:auto; padding:0 16px; }
+    .header-inner { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
+    .logo { display:flex; align-items:center; gap:8px; font-weight:700; color:#1F3C88; }
+    .logo-mark { width:28px; height:28px; background:linear-gradient(135deg,#1F3C88,#4F8FF7); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; }
+    nav a { margin-right:20px; color:#6B7280; font-size:14px; text-decoration:none; }
+    nav a:hover { color:#1F3C88; }
+    .lang-switch button { padding:6px 10px; border:none; cursor:pointer; }
+    .lang-switch .active { background:#1F3C88; color:#fff; border-radius:999px; }
+
+    h1 { font-size:32px; color:#1F3C88; margin-top:32px; }
+    .subtitle { color:#6B7280; margin-top:8px; }
+
+    .section { background:#fff; padding:20px; border-radius:12px; border:1px solid #E5E7EB; margin-top:24px; }
+    .section h2 { font-size:22px; color:#1F3C88; margin-bottom:12px; }
+    .section p { color:#6B7280; font-size:15px; }
+
+    .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:16px; }
+    .feature-card { background:#F9FAFB; padding:16px; border-radius:12px; border:1px solid #E5E7EB; }
+    .feature-title { font-size:16px; font-weight:600; color:#1F3C88; margin-bottom:6px; }
+    .feature-text { font-size:14px; color:#6B7280; }
+
+    .btn-primary { background:#2BB673; color:#fff; padding:12px 20px; border-radius:999px; text-decoration:none; font-weight:600; display:inline-block; margin-top:20px; }
+    .btn-primary:hover { background:#23945f; }
+
+    footer { padding:20px 0; margin-top:40px; border-top:1px solid #E5E7EB; font-size:13px; color:#6B7280; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">JB</div>
+      <span>JobBoard</span>
+    </div>
+
+    <nav>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="jobs.html" data-i18n="nav.jobs">Offres</a>
+      <a href="categories.html" data-i18n="nav.categories">Catégories</a>
+      <a href="about.html" data-i18n="nav.about">À propos</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button id="btn-fr" class="active">FR</button>
+      <button id="btn-en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1 data-i18n="candidates.title">Espace Candidats</h1>
+    <p class="subtitle" data-i18n="candidates.subtitle">
+      Gérez votre profil, vos candidatures et vos alertes emploi en un seul endroit.
+    </p>
+
+    <!-- SECTION 1 : AVANTAGES -->
+    <div class="section">
+      <h2 data-i18n="candidates.benefitsTitle">Pourquoi créer un compte candidat ?</h2>
+      <p data-i18n="candidates.benefitsText">
+        Un compte vous permet de postuler plus rapidement, de suivre vos candidatures et de recevoir des offres ciblées.
+      </p>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="candidates.feature1Title">Profil professionnel</div>
+          <div class="feature-text" data-i18n="candidates.feature1Text">
+            Mettez en avant vos compétences, expériences et langues.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="candidates.feature2Title">Candidatures en un clic</div>
+          <div class="feature-text" data-i18n="candidates.feature2Text">
+            Téléversez votre CV et postulez instantanément aux offres.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="candidates.feature3Title">Alertes personnalisées</div>
+          <div class="feature-text" data-i18n="candidates.feature3Text">
+            Recevez automatiquement les offres correspondant à vos critères.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="candidates.feature4Title">Tableau de bord</div>
+          <div class="feature-text" data-i18n="candidates.feature4Text">
+            Suivez vos candidatures, vos favoris et vos alertes.
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#" class="btn-primary" data-i18n="candidates.cta">Créer mon compte</a>
+    </div>
+
+    <!-- SECTION 2 : CV -->
+    <div class="section">
+      <h2 data-i18n="candidates.cvTitle">Téléverser votre CV</h2>
+      <p data-i18n="candidates.cvText">
+        Ajoutez votre CV pour postuler plus rapidement et permettre aux recruteurs de vous trouver.
+      </p>
+      <a href="#" class="btn-primary" data-i18n="candidates.cvButton">Téléverser mon CV</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> JobBoard — <span data-i18n="footer.rights">Tous droits réservés.</span>
+  </div>
+</footer>
+
+<script>
+  const translations = {
+    fr: {
+      "nav.home": "Accueil",
+      "nav.jobs": "Offres",
+      "nav.categories": "Catégories",
+      "nav.about": "À propos",
+
+      "candidates.title": "Espace Candidats",
+      "candidates.subtitle": "Gérez votre profil, vos candidatures et vos alertes emploi en un seul endroit.",
+
+      "candidates.benefitsTitle": "Pourquoi créer un compte candidat ?",
+      "candidates.benefitsText": "Un compte vous permet de postuler plus rapidement, de suivre vos candidatures et de recevoir des offres ciblées.",
+
+      "candidates.feature1Title": "Profil professionnel",
+      "candidates.feature1Text": "Mettez en avant vos compétences, expériences et langues.",
+
+      "candidates.feature2Title": "Candidatures en un clic",
+      "candidates.feature2Text": "Téléversez votre CV et postulez instantanément aux offres.",
+
+      "candidates.feature3Title": "Alertes personnalisées",
+      "candidates.feature3Text": "Recevez automatiquement les offres correspondant à vos critères.",
+
+      "candidates.feature4Title": "Tableau de bord",
+      "candidates.feature4Text": "Suivez vos candidatures, vos favoris et vos alertes.",
+
+      "candidates.cta": "Créer mon compte",
+
+      "candidates.cvTitle": "Téléverser votre CV",
+      "candidates.cvText": "Ajoutez votre CV pour postuler plus rapidement et permettre aux recruteurs de vous trouver.",
+      "candidates.cvButton": "Téléverser mon CV",
+
+      "footer.rights": "Tous droits réservés."
+    },
+
+    en: {
+      "nav.home": "Home",
+      "nav.jobs": "Jobs",
+      "nav.categories": "Categories",
+      "nav.about": "About",
+
+      "candidates.title": "Candidate Space",
+      "candidates.subtitle": "Manage your profile, applications and job alerts in one place.",
+
+      "candidates.benefitsTitle": "Why create a candidate account?",
+      "candidates.benefitsText": "An account allows you to apply faster, track your applications and receive targeted job offers.",
+
+      "candidates.feature1Title": "Professional profile",
+      "candidates.feature1Text": "Highlight your skills, experience and languages.",
+
+      "candidates.feature2Title": "One‑click applications",
+      "candidates.feature2Text": "Upload your CV and apply instantly to job offers.",
+
+      "candidates.feature3Title": "Personalized alerts",
+      "candidates.feature3Text": "Automatically receive offers matching your criteria.",
+
+      "candidates.feature4Title": "Dashboard",
+      "candidates.feature4Text": "Track your applications, favorites and alerts.",
+
+      "candidates.cta": "Create my account",
+
+      "candidates.cvTitle": "Upload your CV",
+      "candidates.cvText": "Add your CV to apply faster and allow recruiters to find you.",
+      "candidates.cvButton": "Upload my CV",
+
+      "footer.rights": "All rights reserved."
+    }
+  };
+
+  function applyTranslations(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang][key];
+    });
+  }
+
+  document.getElementById("btn-fr").onclick = () => {
+    applyTranslations("fr");
+    localStorage.setItem("lang", "fr");
+    document.getElementById("btn-fr").classList.add("active");
+    document.getElementById("btn-en").classList.remove("active");
+  };
+
+  document.getElementById("btn-en").onclick = () => {
+    applyTranslations("en");
+    localStorage.setItem("lang", "en");
+    document.getElementById("btn-en").classList.add("active");
+    document.getElementById("btn-fr").classList.remove("active");
+  };
+
+  const saved = localStorage.getItem("lang") || "fr";
+  applyTranslations(saved);
+  document.getElementById("btn-" + saved).classList.add("active");
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
