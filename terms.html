@@ -2,32 +2,116 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Conditions d’utilisation – JobBoard Bilingue</title>
+  <title>Conditions d'utilisation – Rubén D'ALVARD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Conditions d’utilisation du JobBoard bilingue FR/EN : règles, obligations, responsabilités et limitations d’usage." />
+
+  <!-- SEO -->
+  <meta name="description" content="Conditions générales d'utilisation du site professionnel de Rubén D'ALVARD.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Conditions d'utilisation – Rubén D'ALVARD">
+  <meta property="og:description" content="Informations légales et conditions d'utilisation du site.">
+  <meta property="og:image" content="photo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fr" href="terms.html">
+  <link rel="alternate" hreflang="en" href="terms.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family:'Inter',sans-serif; background:#F5F7FA; margin:0; }
-    header, footer { background:#fff; border-bottom:1px solid #E5E7EB; }
-    .container { max-width:1120px; margin:auto; padding:0 16px; }
-    .header-inner { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
-    .logo { display:flex; align-items:center; gap:8px; font-weight:700; color:#1F3C88; }
-    .logo-mark { width:28px; height:28px; background:linear-gradient(135deg,#1F3C88,#4F8FF7); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; }
-    nav a { margin-right:20px; color:#6B7280; font-size:14px; text-decoration:none; }
-    nav a:hover { color:#1F3C88; }
-    .lang-switch button { padding:6px 10px; border:none; cursor:pointer; }
-    .lang-switch .active { background:#1F3C88; color:#fff; border-radius:999px; }
+    :root {
+      --primary: #1F3C88;
+      --accent: #2BB673;
+      --bg: #F5F7FA;
+      --text-main: #1A1A1A;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
 
-    h1 { font-size:32px; color:#1F3C88; margin-top:32px; }
-    .section { background:#fff; padding:20px; border-radius:12px; border:1px solid #E5E7EB; margin-top:24px; }
-    .section h2 { font-size:22px; color:#1F3C88; margin-bottom:12px; }
-    .section p, .section ul { color:#6B7280; font-size:15px; line-height:1.6; }
-    .section ul { padding-left:20px; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
 
-    footer { padding:20px 0; margin-top:40px; border-top:1px solid #E5E7EB; font-size:13px; color:#6B7280; }
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 16px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-switch button {
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .lang-switch .active {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 999px;
+    }
+
+    /* PAGE CONTENT */
+    .legal {
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--primary);
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 
@@ -36,19 +120,14 @@
 <header>
   <div class="container header-inner">
     <div class="logo">
-      <div class="logo-mark">JB</div>
-      <span>JobBoard</span>
+      <strong style="color:var(--primary);">Rubén D'ALVARD</strong>
     </div>
 
     <nav>
       <a href="index.html" data-i18n="nav.home">Accueil</a>
-      <a href="jobs.html" data-i18n="nav.jobs">Offres</a>
-      <a href="categories.html" data-i18n="nav.categories">Catégories</a>
       <a href="about.html" data-i18n="nav.about">À propos</a>
+      <a href="cv.html" data-i18n="nav.cv">Mes CV</a>
       <a href="contact.html" data-i18n="nav.contact">Contact</a>
-      <a href="legal.html" data-i18n="nav.legal">Mentions légales</a>
-      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
-      <a href="terms.html" data-i18n="nav.terms">Conditions</a>
     </nav>
 
     <div class="lang-switch">
@@ -58,130 +137,80 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="container legal">
 
-    <h1 data-i18n="terms.title">Conditions d’utilisation</h1>
+  <h1 data-i18n="terms.title">Conditions d'utilisation</h1>
 
-    <!-- SECTION 1 : OBJET -->
-    <div class="section">
-      <h2 data-i18n="terms.objectTitle">Objet du service</h2>
-      <p data-i18n="terms.objectText">
-        Le site JobBoard permet aux candidats de rechercher des offres d’emploi et aux entreprises de publier des annonces.
-      </p>
-    </div>
+  <p data-i18n="terms.intro">
+    Les présentes conditions définissent les règles d’utilisation du site personnel de Rubén D'ALVARD.
+  </p>
 
-    <!-- SECTION 2 : UTILISATION -->
-    <div class="section">
-      <h2 data-i18n="terms.useTitle">Utilisation du site</h2>
-      <p data-i18n="terms.useText">
-        L’utilisateur s’engage à utiliser le site de manière conforme à la loi et à ne pas publier de contenu frauduleux, offensant ou trompeur.
-      </p>
-    </div>
+  <h2 data-i18n="terms.accessTitle">Accès au site</h2>
+  <p data-i18n="terms.accessText">
+    Le site est accessible gratuitement. L’utilisateur s’engage à l’utiliser de manière responsable et à ne pas tenter d’en perturber le fonctionnement.
+  </p>
 
-    <!-- SECTION 3 : COMPTES -->
-    <div class="section">
-      <h2 data-i18n="terms.accountTitle">Comptes utilisateurs</h2>
-      <p data-i18n="terms.accountText">
-        Les utilisateurs sont responsables de la confidentialité de leurs identifiants et de l’exactitude des informations fournies.
-      </p>
-    </div>
+  <h2 data-i18n="terms.contentTitle">Contenu du site</h2>
+  <p data-i18n="terms.contentText">
+    Les informations présentées (CV, expériences, textes, images) sont fournies à titre informatif.  
+    Toute reproduction ou utilisation non autorisée est interdite.
+  </p>
 
-    <!-- SECTION 4 : RESPONSABILITÉ -->
-    <div class="section">
-      <h2 data-i18n="terms.liabilityTitle">Responsabilité</h2>
-      <p data-i18n="terms.liabilityText">
-        JobBoard ne garantit pas l’exactitude des offres publiées. Les entreprises sont seules responsables du contenu de leurs annonces.
-      </p>
-    </div>
+  <h2 data-i18n="terms.liabilityTitle">Responsabilité</h2>
+  <p data-i18n="terms.liabilityText">
+    L’éditeur du site ne peut être tenu responsable en cas d’erreur, d’interruption ou de problème technique indépendant de sa volonté.
+  </p>
 
-    <!-- SECTION 5 : SUSPENSION -->
-    <div class="section">
-      <h2 data-i18n="terms.suspendTitle">Suspension ou suppression de compte</h2>
-      <p data-i18n="terms.suspendText">
-        En cas d’abus, de fraude ou de non-respect des règles, JobBoard se réserve le droit de suspendre ou supprimer un compte.
-      </p>
-    </div>
+  <h2 data-i18n="terms.contactTitle">Contact</h2>
+  <p data-i18n="terms.contactText">
+    Pour toute question concernant ces conditions, vous pouvez me contacter à :  
+    <strong>rubendalvard@gmail.com</strong>
+  </p>
 
-    <!-- SECTION 6 : MODIFICATIONS -->
-    <div class="section">
-      <h2 data-i18n="terms.modifyTitle">Modifications des conditions</h2>
-      <p data-i18n="terms.modifyText">
-        Les présentes conditions peuvent être mises à jour à tout moment. Les utilisateurs seront informés en cas de changement majeur.
-      </p>
-    </div>
-
-  </div>
 </main>
 
 <footer>
-  <div class="container">
-    © <span id="year"></span> JobBoard — <span data-i18n="footer.rights">Tous droits réservés.</span>
-  </div>
+  © <span id="year"></span> Rubén D'ALVARD — <span data-i18n="footer.rights">Tous droits réservés.</span>
 </footer>
 
 <script>
   const translations = {
     fr: {
       "nav.home": "Accueil",
-      "nav.jobs": "Offres",
-      "nav.categories": "Catégories",
       "nav.about": "À propos",
+      "nav.cv": "Mes CV",
       "nav.contact": "Contact",
-      "nav.legal": "Mentions légales",
-      "nav.privacy": "Confidentialité",
-      "nav.terms": "Conditions",
 
-      "terms.title": "Conditions d’utilisation",
-      "terms.objectTitle": "Objet du service",
-      "terms.objectText": "Le site JobBoard permet aux candidats de rechercher des offres d’emploi et aux entreprises de publier des annonces.",
-
-      "terms.useTitle": "Utilisation du site",
-      "terms.useText": "L’utilisateur s’engage à utiliser le site de manière conforme à la loi et à ne pas publier de contenu frauduleux, offensant ou trompeur.",
-
-      "terms.accountTitle": "Comptes utilisateurs",
-      "terms.accountText": "Les utilisateurs sont responsables de la confidentialité de leurs identifiants et de l’exactitude des informations fournies.",
-
+      "terms.title": "Conditions d'utilisation",
+      "terms.intro": "Les présentes conditions définissent les règles d’utilisation du site personnel de Rubén D'ALVARD.",
+      "terms.accessTitle": "Accès au site",
+      "terms.accessText": "Le site est accessible gratuitement. L’utilisateur s’engage à l’utiliser de manière responsable et à ne pas tenter d’en perturber le fonctionnement.",
+      "terms.contentTitle": "Contenu du site",
+      "terms.contentText": "Les informations présentées (CV, expériences, textes, images) sont fournies à titre informatif. Toute reproduction ou utilisation non autorisée est interdite.",
       "terms.liabilityTitle": "Responsabilité",
-      "terms.liabilityText": "JobBoard ne garantit pas l’exactitude des offres publiées. Les entreprises sont seules responsables du contenu de leurs annonces.",
-
-      "terms.suspendTitle": "Suspension ou suppression de compte",
-      "terms.suspendText": "En cas d’abus, de fraude ou de non-respect des règles, JobBoard se réserve le droit de suspendre ou supprimer un compte.",
-
-      "terms.modifyTitle": "Modifications des conditions",
-      "terms.modifyText": "Les présentes conditions peuvent être mises à jour à tout moment. Les utilisateurs seront informés en cas de changement majeur.",
+      "terms.liabilityText": "L’éditeur du site ne peut être tenu responsable en cas d’erreur, d’interruption ou de problème technique indépendant de sa volonté.",
+      "terms.contactTitle": "Contact",
+      "terms.contactText": "Pour toute question concernant ces conditions, vous pouvez me contacter à : rubendalvard@gmail.com",
 
       "footer.rights": "Tous droits réservés."
     },
 
     en: {
       "nav.home": "Home",
-      "nav.jobs": "Jobs",
-      "nav.categories": "Categories",
       "nav.about": "About",
+      "nav.cv": "My CVs",
       "nav.contact": "Contact",
-      "nav.legal": "Legal Notice",
-      "nav.privacy": "Privacy Policy",
-      "nav.terms": "Terms of Use",
 
       "terms.title": "Terms of Use",
-      "terms.objectTitle": "Purpose of the service",
-      "terms.objectText": "The JobBoard website allows candidates to search for job offers and companies to publish job postings.",
-
-      "terms.useTitle": "Use of the website",
-      "terms.useText": "Users agree to use the site lawfully and not to publish fraudulent, offensive or misleading content.",
-
-      "terms.accountTitle": "User accounts",
-      "terms.accountText": "Users are responsible for keeping their login credentials confidential and ensuring the accuracy of the information provided.",
-
+      "terms.intro": "These terms define the rules for using the personal website of Rubén D'ALVARD.",
+      "terms.accessTitle": "Website Access",
+      "terms.accessText": "The website is freely accessible. Users agree to use it responsibly and not attempt to disrupt its operation.",
+      "terms.contentTitle": "Website Content",
+      "terms.contentText": "The information presented (CV, experiences, texts, images) is provided for informational purposes. Any unauthorized reproduction or use is prohibited.",
       "terms.liabilityTitle": "Liability",
-      "terms.liabilityText": "JobBoard does not guarantee the accuracy of published job offers. Companies are solely responsible for the content of their postings.",
-
-      "terms.suspendTitle": "Account suspension or deletion",
-      "terms.suspendText": "In case of abuse, fraud or violation of the rules, JobBoard reserves the right to suspend or delete an account.",
-
-      "terms.modifyTitle": "Changes to the terms",
-      "terms.modifyText": "These terms may be updated at any time. Users will be notified in case of major changes.",
+      "terms.liabilityText": "The site owner cannot be held responsible for errors, interruptions or technical issues beyond their control.",
+      "terms.contactTitle": "Contact",
+      "terms.contactText": "For any question regarding these terms, you can contact me at: rubendalvard@gmail.com",
 
       "footer.rights": "All rights reserved."
     }
@@ -197,23 +226,19 @@
   document.getElementById("btn-fr").onclick = () => {
     applyTranslations("fr");
     localStorage.setItem("lang", "fr");
-    document.getElementById("btn-fr").classList.add("active");
-    document.getElementById("btn-en").classList.remove("active");
   };
 
   document.getElementById("btn-en").onclick = () => {
     applyTranslations("en");
     localStorage.setItem("lang", "en");
-    document.getElementById("btn-en").classList.add("active");
-    document.getElementById("btn-fr").classList.remove("active");
   };
 
   const saved = localStorage.getItem("lang") || "fr";
   applyTranslations(saved);
-  document.getElementById("btn-" + saved).classList.add("active");
 
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
+
